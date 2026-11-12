@@ -41,6 +41,16 @@ _Avoid_: 产品线
 Twinwise 一次生成过程中的一个步骤。dashboard 按节点显示进度。
 _Avoid_: 阶段、stage
 
+**运行**:
+对一套住宅从头（或从某个节点）跑一遍节点，产出一个 Godot 项目。每次运行有编号，例如 #14。
+_Avoid_: 任务、构建、job
+
+**执行者**:
+节点由谁完成：脚本（Script）、agent（Agent）或人（Human）。
+
+**节点状态**:
+Queued（还没轮到）、Running、Needs a person（轮到人的节点）、Done、Failed（产出有问题，包括检查不达标、签收被驳回）、Interrupted（进程被中断，不是产出问题）、Not run（运行已结束，没轮到）。
+
 **点位**:
 空间里一个设备被明确指定的位置，由输入给定，Twinwise 不推导。
 _Avoid_: 布点规则
